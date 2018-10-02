@@ -9,30 +9,37 @@ You can sign up for a free Realex Payments sandbox account at https://www.realex
 
 1. Add the following to your 'composer.json' file
 
-    ```
+    ```json
     {
         "require": {
             "realexpayments/rxp-remote-php": "1.2.2"
         }    
     }
     ```
+    
+    Or execute the command:
+    
+    ```cli
+    composer require realexpayments/rxp-remote-php 1.2.2
+    ```
+    
 
 2. Inside the application directory run composer:
 
-    ```
+    ```cli
     composer update
     ```
 
     OR (depending on your server configuration)
 
-    ```
+    ```cli
     php composer.phar update
     ```
 
 3. Add a reference to the autoloader class anywhere you need to use the sdk
 
     ```php
-    require_once ( 'vendor/autoload.php' );
+    require_once 'vendor/autoload.php';
     ```
 
 4. Use the sdk <br/>
